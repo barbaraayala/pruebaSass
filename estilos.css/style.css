@@ -14,17 +14,15 @@
   background: url(../img/panora\,ica.jpg) no-repeat;
   background-size: cover;
 }
-
 .headerSize .titulo {
-  font-family: 'Gruppo', cursive;
-  color: #444141;
+  font-family: "Gruppo", cursive;
+  color: rgb(68, 65, 65);
   margin-bottom: 10px;
 }
-
 .headerSize .items {
   background-color: rgba(168, 17, 210, 0.318);
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: larger;
   font-weight: bolder;
   color: white;
@@ -34,8 +32,19 @@ iframe {
   width: 100%;
 }
 
+.btn-twitter {
+  background-color: #55aCee;
+}
+
+.btn-facebook {
+  background-color: rgb(18, 18, 245);
+}
+
+.btn-instagram {
+  background-color: rgb(243, 12, 4);
+}
+
 .main {
-  grid-area: main;
   height: 100%;
   width: 100%;
   background-color: black;
@@ -44,16 +53,19 @@ iframe {
 .carousel-item img {
   border-radius: 30px;
 }
-
 .carousel-item .colorLetra {
-  color: #f1d9d9;
-  font-family: 'Koulen', cursive;
+  color: rgb(241, 217, 217);
+  font-family: "Koulen", cursive;
   font-size: large;
 }
 
 #formu {
-  color: #444141;
-  font-family: 'Koulen', cursive;
+  color: rgb(68, 65, 65);
+  font-family: "Koulen", cursive;
+}
+
+.fotos, .galeriimg {
+  border: solid 8px rgb(250, 250, 250);
 }
 
 .galeriimg {
@@ -61,7 +73,7 @@ iframe {
 }
 
 .cabeza {
-  font-family: 'Gruppo', cursive;
+  font-family: "Gruppo", cursive;
   color: bisque;
   font-size: larger;
   font-weight: bolder;
@@ -70,7 +82,7 @@ iframe {
 .turs {
   color: bisque;
   font-size: medium;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .marginFooter {
@@ -84,38 +96,29 @@ font-family: 'Square Peg', cursive;*/
 footer {
   grid-area: footer;
   width: 100%;
-  color: #444141;
+  color: rgb(68, 65, 65);
   background-color: bisque;
   list-style: none;
 }
 
 @media screen and (max-width: 950px) {
   .body .header .main .flex .tturs .turs {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "cong1 rese2" "cente3 rose4" "mercado laboca";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "cong1 rese2" "cente3 rose4" "mercado laboca";
   }
 }
-
 @media screen and (max-width: 500px) {
   .body .header .main .flex .tturs .turs {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "cong1 rese2 cente3" "rose4 mercado laboca";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "cong1 rese2 cente3" "rose4 mercado laboca";
   }
 }
-
 @media screen and (max-width: 300px) {
   .body .header .main .flex .tturs .turs {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "cong1 rese2 cente3" "rose4 mercado laboca";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "cong1 rese2 cente3" "rose4 mercado laboca";
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

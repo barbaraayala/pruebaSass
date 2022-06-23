@@ -30,12 +30,28 @@ iframe {
     width: 100%;
 }
 
+$redes:(
+    twitter:  #55aCee,
+    facebook: rgb(18, 18, 245),
+    instagram: rgb(243, 12, 4),
+
+
+);
+@each $red, $color in $redes {
+    .btn-#{$red} {
+        background-color: $color;
+    }
+    
+}
+ @mixin medidas ($height, $whdth) { 
+    height: $height;
+    width: $whdth;
+ }
+
+
 .main {
 
-
-    grid-area: main;
-    height: 100%;
-    width: 100%;
+    @include medidas(100%,100% );
     background-color: black;
 }
 .carousel-item{
@@ -54,11 +70,15 @@ iframe {
     color: rgb(68, 65, 65);
     font-family: 'Koulen', cursive;
 }
-.galeriimg {
-   
-   
-    border-radius: 30px;
 
+.fotos{
+    border: solid 8px rgb(250, 250, 250);
+    
+}
+.galeriimg {
+   @extend .fotos;
+   border-radius: 30px;
+   
 }
 
   
