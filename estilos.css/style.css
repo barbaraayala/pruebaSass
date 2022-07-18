@@ -32,21 +32,7 @@ iframe {
   width: 100%;
 }
 
-.btn-twitter {
-  background-color: #55aCee;
-}
-
-.btn-facebook {
-  background-color: rgb(18, 18, 245);
-}
-
-.btn-instagram {
-  background-color: rgb(243, 12, 4);
-}
-
 .main {
-  height: 100%;
-  width: 100%;
   background-color: black;
 }
 
@@ -87,6 +73,13 @@ iframe {
 
 .marginFooter {
   margin-top: 5rem;
+}
+
+.iconos {
+  display: flex;
+  padding-top: 20px;
+  font-size: 30px;
+  display: inline;
 }
 
 /*font-family: 'Gruppo', cursive;
